@@ -2,6 +2,9 @@ import simplejson as json
 import urllib2
 
 def get_all_cb_comps():
+    """
+    Perform URL get operation
+    """
     u = urllib2.urlopen('http://api.crunchbase.com/v/1/companies.js')
     
     comps = u.read()
